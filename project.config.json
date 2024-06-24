@@ -1,0 +1,13 @@
+{
+	"miniprogramRoot": "./dist",
+	"projectname": "taro3-react-template",
+	"description": "taro3-react多端项目模板",
+	"appid": "wx5e3868cb67098631",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": true,
+		"minified": false
+	},
+	"compileType": "miniprogram"
+}

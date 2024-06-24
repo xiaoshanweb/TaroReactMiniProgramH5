@@ -1,0 +1,15 @@
+@import './../shared/styles/var.scss';
+
+.test {
+	color: $baseFontSize;
+	font-size: $baseFontColor;
+	box-sizing: border-box;
+}
+
+.index {
+	padding: 0 20px;
+
+	.nut-button {
+		margin-top: 10px;
+	}
+}
