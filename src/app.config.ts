@@ -1,8 +1,8 @@
 const tabbarConfig = require('./tabbar.config')
 
 export default defineAppConfig({
-	entryPagePath: 'index/index',
-	pages: ['index/index', 'user/index'],
+	entryPagePath: 'pages/index/index',
+	pages: ['pages/index/index', 'pages/warning/index', 'pages/map/index'],
 	subpackages: [
 		{
 			root: 'default',

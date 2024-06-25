@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import PageContainer from '@/components/page_container'
-import { Button } from '@tarojs/components';
+import { Button } from '@tarojs/components'
 import Router from '@/utils/route'
 
 import './index.scss'
@@ -14,7 +14,7 @@ const Index = (): JSX.Element => {
 	/**
 	 * 跳转demo页面
 	 */
-	const jumpToDemo = (demoType: 'router'|'form') => {
+	const jumpToDemo = (demoType: 'router' | 'form') => {
 		switch (demoType) {
 			case 'router':
 				Router.navigateTo({
@@ -23,7 +23,7 @@ const Index = (): JSX.Element => {
 				break
 			case 'form':
 				Router.navigateTo({
-					url: '/demo/form/form'
+					url: '/demo/form/form',
 				})
 
 				break
@@ -35,9 +35,19 @@ const Index = (): JSX.Element => {
 			title="首页"
 			containerClass="index"
 		>
-			<div className='btn-style' onClick={() => jumpToDemo('router')}>路由跳转</div>
-			<div className='btn-style' onClick={() => jumpToDemo('form')}>表单验证</div>
-			<Button type='primary'>测试按钮</Button>
+			<div
+				className="btn-style"
+				onClick={() => jumpToDemo('router')}
+			>
+				路由跳转
+			</div>
+			<div
+				className="btn-style"
+				onClick={() => jumpToDemo('form')}
+			>
+				表单验证
+			</div>
+			<Button type="primary">测试按钮</Button>
 		</PageContainer>
 	)
 }

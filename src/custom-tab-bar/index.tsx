@@ -7,16 +7,28 @@ import './index.scss'
 interface TabbarItem {
 	pagePath: string
 	text: string
+	iconPath: string
+	selectedIconPath: string
 }
 
 const list: TabbarItem[] = [
 	{
-		pagePath: 'index/index',
+		pagePath: 'pages/index/index',
 		text: '首页',
+		iconPath: '/assets/tabbar/home.png',
+		selectedIconPath: '/assets/tabbar/home_active.png',
 	},
 	{
-		pagePath: 'user/index',
-		text: '我的',
+		pagePath: 'pages/map/index',
+		text: '地图',
+		iconPath: '/assets/tabbar/map.png',
+		selectedIconPath: '/assets/tabbar/map_active.png',
+	},
+	{
+		pagePath: 'pages/warning/index',
+		text: '异况',
+		iconPath: '/assets/tabbar/warning.png',
+		selectedIconPath: '/assets/tabbar/warning_active.png',
 	},
 ]
 
@@ -45,17 +57,20 @@ const CustomTabBar = (): JSX.Element => {
 	}, [])
 
 	return (
-		<View className='tabbar-container'>
+		<View className="tabbar-container">
 			{list.map(item => {
 				return (
 					<View
 						onClick={() => handleSwtich(item)}
 						key={item.pagePath}
-						className={`tabbar-item ${
-							item.pagePath === currentTab ? 'tabbar-item-selected' : ''
-						}`}
+						className={`tabbar-item ${item.pagePath === currentTab ? 'tabbar-item-selected' : ''}`}
 					>
-						<View className='tabbar-item-text'>{item.text}</View>
+						<img
+							className="icon-img"
+							src={item.pagePath === currentTab ? item.selectedIconPath : item.iconPath}
+							alt=""
+						/>
+						<View className="tabbar-item-text">{item.text}</View>
 					</View>
 				)
 			})}

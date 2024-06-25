@@ -11,7 +11,7 @@ class Pages {
 			/**
 			 * 首页
 			 */
-			home: 'index/index',
+			home: 'pages/index/index',
 		}
 	}
 
@@ -28,7 +28,7 @@ class Pages {
 
 	backToHome() {
 		Taro.switchTab({
-			url: '/index/index',
+			url: 'pages/index/index',
 		})
 	}
 }

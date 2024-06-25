@@ -10,10 +10,11 @@ import './index.scss'
 
 const UserIndex = (): JSX.Element => {
 	return (
-		<PageContainer title='个人中心' containerClass='user-index-page'>
-			<View className='user-index-content'>
-				I&apos;m Lexmin, a FrontEnd Engineer.
-			</View>
+		<PageContainer
+			title="个人中心"
+			containerClass="user-index-page"
+		>
+			<View className="user-index-content">I&apos;m Lexmin, a FrontEnd Engineer.</View>
 		</PageContainer>
 	)
 }

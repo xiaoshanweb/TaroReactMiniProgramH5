@@ -54,6 +54,7 @@
 		"@tarojs/runtime": "3.6.16",
 		"@tarojs/shared": "3.6.16",
 		"@tarojs/taro": "3.6.16",
+		"@types/node": "^20.14.8",
 		"evil-eval": "^0.0.1",
 		"mobx": "^4.8.0",
 		"mobx-react": "^6.1.4",

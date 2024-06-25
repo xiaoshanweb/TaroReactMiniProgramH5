@@ -22,9 +22,18 @@
 		"resolveJsonModule": true,
 		"typeRoots": ["node_modules/@types", "global.d.ts"],
 		"paths": {
-			"@/*": ["src/shared/*"]
+			"@/*": ["src/shared/*"],
+			"react/jsx-runtime": ["types/jsx-runtime.d.ts"]
 		},
-		"noUncheckedIndexedAccess": true
+		"noUncheckedIndexedAccess": true,
+		"types": [
+			"sass",
+			"node','react/jsx-runtime",
+			"react",
+			"react-dom",
+			"@tarojs/taro",
+			"@tarojs/components"
+		]
 	},
 	"exclude": ["node_modules", "dist"],
 	"compileOnSave": false
